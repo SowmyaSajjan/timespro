@@ -40,3 +40,13 @@ p{
     from{ width: 100px;}
     to{width: 400px;}
 }
+#gradient{
+    width:500px;
+    height: 200px;
+    background-image: linear-gradient(to right bottom,blue,yellow, red);
+}
+.radial{
+    width:500px;
+    height: 200px;
+    background-image: radial-gradient(yellow, violet, blue);
+}
