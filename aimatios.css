@@ -1,0 +1,42 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    
+}
+#rotate{
+    transform: rotate(60deg);
+}
+#skew{
+    transform: skew(30deg);
+}
+#translate{
+    transform: translate(120px, 20px);
+}
+#transition{
+    background-color: crimson;
+   /* transition: width 2s*/
+   color: white;
+   transition: background-color 3s;
+}
+#transition:hover{
+   /* width: 500px; */
+   cursor: pointer;
+ /*  background-color: yellow;*/
+   background-image: radial-gradient(blue, red);
+   transform: rotate(60deg); /*can use skew instead of rortate also*/
+}
+p{
+    width: 100px;
+    height: 100px;
+  /*  background-color: coral;*/
+    background-image: linear-gradient(to left, yellow , red);
+    animation-name: code;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes code {
+    from{ width: 100px;}
+    to{width: 400px;}
+}
