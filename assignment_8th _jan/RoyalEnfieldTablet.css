@@ -1,0 +1,66 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color:lightsalmon;
+    height: 150px;
+    margin: 50px;
+    border-radius: 10px;
+}
+header h1{
+    margin-top: 20px;
+    text-align: center;
+    color:brown;
+}
+body{
+    background-color: whitesmoke;
+    color:black;
+    font-size: medium;
+    text-align:left;
+}
+.navbar nav{
+    text-align: center;
+}
+nav a{
+    color:orangered;
+    text-align: center;
+    padding: 20px;
+}
+section p{
+    margin: 20px;
+    font-size: medium;
+}
+table{
+    text-align: center;
+    margin: 20px;
+    font-size: medium;
+}
+td{
+    padding: 10px;
+    margin-left: 10px  ; 
+    margin-right: 10px ;
+}
+td div{
+    background-color: lightsalmon;
+    border-radius: 30px;
+    text-align:center;
+    color: brown;
+    font-weight:bolder;
+    padding: 10px;
+}
+td div img{
+    padding: 10px;
+    width: 40%;
+    height: 20%;
+}
+footer{
+    background-color: lightsalmon;
+    margin: 20px;
+    padding: 20px;
+    color:brown;
+    border-radius: 10px;
+    text-align: center;
+}
+tr td {
+    text-align: left;
+}
