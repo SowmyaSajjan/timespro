@@ -82,68 +82,50 @@ header{
 .row .col{
     padding: 20px;
 }
-.icons-desc{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    height: 40vh;
-    width: 100vw;
-    margin-top: 1rem;
-}
-.icon-container{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5rem ;
-    background-size: cover;
-    padding: 20px;
+.icons-desc {
     display: flex;
-    align-items: center;
+}
+
+.icon-item-container {
+    position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.icon-container p{
-    margin-top: 6rem;
-    color: black;
+    align-items: center;
+    /*flex-basis: 16%;*/
     text-align: center;
+    padding: 1rem;
 }
-.icon-container:nth-child(1){
-    background-image: url('../assests/images/conference\ hall.png');
+ 
+.icon-item-container:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    width: 1px;
+    height: 100%;
+    background: #e0e0e0;
+    transform: rotate(13deg);
 }
-.icon-container:nth-child(2){
-    background-image: url('../assests/images/restaurant.png');
+
+.amenities > .icons-desc > .icon-item-container:nth-child(4n)::after {
+    content: '';
+    background: none;
 }
-.icon-container:nth-child(3){
-    background-image: url('../assests/images/swim.png');
+.amenities > .icons-desc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
 }
-.icon-container:nth-child(4){
-    background-image: url('../assests/images/spa.png');
+
+.amenities > .icons-desc > .icon-item-container {
+    flex-direction: row;
+    justify-content: flex-start;
 }
-.icon-container:nth-child(5){
-    background-image: url('../assests/images/wifi.png');
-}
-.icon-container:nth-child(6){
-    background-image: url('../assests/images/ac.png');
-}
-.icon-container:nth-child(7){
-    background-image: url('../assests/images/plates.png');
-}
-.icon-container:nth-child(8){
-    background-image: url('../assests/images/ironing.png');
-}
-.icon-container:nth-child(9){
-    background-image: url('../assests/images/tv.png');
-}
-.icon-container:nth-child(10){
-    background-image: url('../assests/images/microwave.png');
-}
-.icon-container:nth-child(11){
-    background-image: url('../assests/images/fridge.png');
-}
-.icon-container:nth-child(12){
-    background-image: url('../assests/images/sage.png');
-}
-.icon-container:nth-child(13){
-    background-image: url('../assests/images/teamaker.png');
-}
-.icon-container:nth-child(14){
-    background-image: url('../assests/images/telephone.png');
+
+.amenities > .icons-desc > .icon-item-container > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
 }
