@@ -69,3 +69,5 @@ document.write("<br> shift method "+ arr.shift());
 arr.push(90);
 document.write("after push <br>"+arr);
 document.write("<br> after pop "+ arr.pop());
+
+
