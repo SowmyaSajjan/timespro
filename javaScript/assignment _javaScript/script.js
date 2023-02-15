@@ -5,7 +5,7 @@ $(document).ready(function(){
     $("#flip").click(function(){
         $("#div").slideDown("slow");
     }),
-    $("ani").click(function(){
+    $("#ani").click(function(){
         $("#div1").animate({left:'250px'});
     }),
     $("#hide").click(function(){
