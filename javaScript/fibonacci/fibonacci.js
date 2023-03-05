@@ -10,3 +10,6 @@ for(let i=2;i<n;i++)
     n1=n2;
     n2=n3;
 }
+
+
+document.write(<h1>Welcome to JavaScript</h1>);s
